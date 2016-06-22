@@ -16,7 +16,7 @@ import hudson.model.TaskListener;
  */
 public class VsTestListenerDecorator extends LineTransformationOutputStream {
 
-    private final static String TRX_PATTERN = "^Results File: (.*\\.trx)$";
+    private final static String TRX_PATTERN = "^.*?Results File: (.*\\.trx)$";
     private final static int TRX_GROUP = 1;
 
     private final static String ATTACHMENTS_PATTERN = "^Attachments:\\s*$";
